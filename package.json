@@ -1,0 +1,10 @@
+{
+  "name": "flood-risk-esp32-project",
+  "version": "1.0.0",
+  "description": "Flood Risk Prediction & Monitoring System with ESP32, FastAPI, and React",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview"
+  }
+}

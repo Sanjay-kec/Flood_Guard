@@ -1,0 +1,25 @@
+{
+  "model_file": "flood_model_rf.pkl",
+  "feature_names": [
+    "latitude",
+    "longitude",
+    "rainfall",
+    "temperature",
+    "humidity",
+    "water_level",
+    "elevation"
+  ],
+  "target_column": "prototype_alert_label",
+  "train_samples": 8000,
+  "test_samples": 2000,
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1_score": 1.0,
+  "confusion_matrix": {
+    "true_negative": 1000,
+    "false_positive": 0,
+    "false_negative": 0,
+    "true_positive": 1000
+  }
+}

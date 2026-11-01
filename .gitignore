@@ -1,0 +1,52 @@
+# ==============================================================================
+# FloodGuard - Root Git Ignore Configuration
+# ==============================================================================
+
+# Environment & Secrets (Never commit actual passwords, tokens, or credentials)
+.env
+.env*.local
+*.env
+*.db
+*.sqlite*
+backend/floodguard.db*
+*.db-wal
+*.db-shm
+
+# Production models (model/flood_model_rf.pkl - 145KB, model/flood_model_v2.pkl - 2.1MB) are tracked
+# Legacy 76MB model (model/flood_model.pkl) is decommissioned and deleted
+model/flood_model.pkl
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Python Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Node.js Dependencies & Production Builds
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+
+# Logs & Temporary Files
+*.log
+*.bak
+*.old
+*.tmp
+npm-debug.log*
+yarn-debug.log*
+
+# Operating System & Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.sw?
